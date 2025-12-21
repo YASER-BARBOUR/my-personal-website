@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact - Yaser Barbour</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        article {
+            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 0 5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-wrapper {
+            padding: 50px;
+        }
+
+        h2 {
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        .student-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .student-card h4 {
+            color: #1e3c72;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .student-card strong {
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .student-card a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .student-card a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 3px solid #667eea;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 30px 20px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .student-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <nav>
+            <a href="home-css.html">Home</a>
+            <a href="cv-css.html">Resume</a>
+            <a href="classes-css.html">Classes</a>
+            <a href="books-css.html">Books</a>
+            <a href="contact-css.html">Contact</a>
+            <a href="">HTML Page</a>
+        </nav>
+
+        <div class="content-wrapper">
+            <h2>Student Name & Number</h2>
+
+            <div class="student-card">
+                <h4>YASER BARBOUR - 9A230140</h4>
+                <strong>Email:</strong> 
+                <a href="mailto:yaser.barbour@medipol.edu.tr">yaser.barbour@medipol.edu.tr</a>
+            </div>
+
+            <div class="student-card">
+                <h4>Ramez Shadi Ahmad Khaleelo - 9A240130</h4>
+                <strong>Email:</strong> 
+                <a href="mailto:ramez.khaleelo@std.medipol.edu.tr">ramez.khaleelo@std.medipol.edu.tr</a>
+            </div>
+
+            <div class="student-card">
+                <h4>Mohammad ABDULAZIZ - 9A230141</h4>
+                <strong>Email:</strong> 
+                <a href="mailto:mohammad.abdulaziz@std.medipol.edu.tr">mohammad.abdulaziz@std.medipol.edu.tr</a>
+            </div>
+
+            <div class="student-card">
+                <h4>Belgasem Sofıan BENABDALLAH - 9A240148</h4>
+                <strong>Email:</strong> 
+                <a href="mailto:belgasem.benabdallah@std.medipol.edu.tr">belgasem.benabdallah@std.medipol.edu.tr</a>
+            </div>
+
+            <div class="student-card">
+                <h4>Suhaıb HATIR - 9A23142</h4>
+                <strong>Email:</strong> 
+                <a href="mailto:suhaib.khater@std.medipol.edu.tr">suhaib.khater@std.medipol.edu.tr</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright ©: <a href="mailto:yaser.barbour@medipol.edu.tr" target="_blank">Yaser Barbour</a></p>
+        </footer>
+    </article>
+</body>
+</html>
