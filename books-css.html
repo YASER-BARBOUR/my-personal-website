@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books - Yaser Barbour</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        article {
+            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 0 5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-wrapper {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        th {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr {
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background: #f8f9ff;
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        img {
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(2.5);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 3px solid #667eea;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 30px 20px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <nav>
+            <a href="home-css.html">Home</a>
+            <a href="cv-css.html">Resume</a>
+            <a href="classes-css.html">Classes</a>
+            <a href="books-css.html">Books</a>
+            <a href="contact-css.html">Contact</a>
+            <a href="https://yaser-barbour.github.io/my-personal-website/index.html">HTML Page</a>
+        </nav>
+
+        <div class="content-wrapper">
+            <h1>My Favorite Books</h1>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Author Name</th>
+                        <th>Publication Year</th>
+                        <th>Cover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Because You Are Allah (A Journey to the Seventh Heaven)</td>
+                        <td>Ali Jaber Al-Fayfi</td>
+                        <td>2016</td>
+                        <td><img src="book1.jpg" width="40" alt="Book 1"></td>
+                    </tr>
+                    <tr>
+                        <td>Morning Talk</td>
+                        <td>Adham Sharqawi</td>
+                        <td>2015</td>
+                        <td><img src="book2.jpg" width="40" alt="Book 2"></td>
+                    </tr>
+                    <tr>
+                        <td>Beautiful Things</td>   
+                        <td>Hunter Biden</td>
+                        <td>2021</td>
+                        <td><img src="book3.jpg" width="40" alt="Book 3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Copyright ©: <a href="mailto:yaser.barbour@medipol.edu.tr" target="_blank">Yaser Barbour</a></p>
+        </footer>
+    </article>
+</body>
+</html>

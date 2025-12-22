@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classes - Yaser Barbour</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        article {
+            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 0 5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-wrapper {
+            padding: 50px;
+        }
+
+        h2, h3 {
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+        }
+
+        th {
+            color: #1e3c72;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr {
+            background: #FFFEF0;
+            transition: all 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background: #FFF9C4;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #FFFACD;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background: #FFF59D;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 3px solid #667eea;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 30px 20px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <nav>
+            <a href="home-css.html">Home</a>
+            <a href="cv-css.html">Resume</a>
+            <a href="classes-css.html">Classes</a>
+            <a href="books-css.html">Books</a>
+            <a href="contact-css.html">Contact</a>
+            <a href="https://yaser-barbour.github.io/my-personal-website/index.html">HTML Page</a>
+        </nav>
+
+        <div class="content-wrapper">
+            <h2>My Classes</h2>
+            <h3>Fall Semester 2025 - 2026</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MANAGEMENT and ORGANIZATION</td>
+                        <td>Monday</td>
+                        <td>09:00 - 12:00</td>
+                        <td>B305</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>Tuesday</td>
+                        <td>13:00 - 15:00</td>
+                        <td>C303</td>
+                    </tr>
+                    <tr>
+                        <td>E-COMMERCE</td>
+                        <td>Wednesday</td>
+                        <td>10:00 - 13:00</td>
+                        <td>3B06</td>
+                    </tr>
+                    <tr>
+                        <td>Web Design</td>
+                        <td>Thursday</td>
+                        <td>14:00 - 17:00</td>
+                        <td>3B06</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Copyright ©: <a href="mailto:yaser.barbour@medipol.edu.tr" target="_blank">Yaser Barbour</a></p>
+        </footer>
+    </article>
+</body>
+</html>
