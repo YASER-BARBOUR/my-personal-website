@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>YASER BARBOUR Web Site</title>
+    <meta name="description" content="YASER BARBOUR Personal Web Site" />
+    <meta name="keywords" content="YASER, BARBOUR, Web, Site, Teaching, Student, Book, Programing" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        article {
+            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 0 5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+                .social-buttons {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .twitter {
+            background: #000000;
+        }
+
+        .youtube {
+            background: #FF0000;
+        }
+
+        .linkedin {
+            background: #0077B5;
+        }
+
+        .social-btn img {
+            width: 30px;
+            height: 30px;
+            filter: brightness(0) invert(1);
+        }
+
+        .social-btn::before {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .linkedin::before {
+            content: "in";
+        }
+
+        .twitter::before {
+            content: "𝕏";
+        }
+
+        .youtube::before {
+            content: "▶";
+        }
+
+        .content-wrapper {
+            padding: 50px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            flex-shrink: 0;
+        }
+
+        .profile-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h1 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .profile-text p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .profile-text mark {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .university-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .university-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 3px solid #667eea;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-wrapper {
+                padding: 30px 20px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .profile-text h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <nav>
+            <a href="home-css.html">Home</a>
+            <a href="cv-css.html">Resume</a>
+            <a href="classes-css.html">Classes</a>
+            <a href="books-css.html">Books</a>
+            <a href="contact-css.html">Contact</a>
+            <a href="https://yaser-barbour.github.io/my-personal-website/index.html">HTML Page</a>
+           
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com" target="_blank" class="social-btn linkedin" title="LinkedIn">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-btn twitter" title="Twitter">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="social-btn youtube" title="YouTube">
+                </a>
+            </div>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <a href="http://www.yaserbarbour.com" target="_blank">
+                        <img src="yaser.jpeg" alt="Yaser Barbour" />
+                    </a>
+                </div>
+
+                <div class="profile-text">
+                    <h1>Welcome to My Personal Website!</h1>
+                    <p>
+                        My name is Yasser, I'm from Syria, I was born and raised there and I finished primary school there. Then I traveled to Saudi Arabia where I completed my education up to high school. Afterward, I traveled to Turkey to study university. I am currently a student at Medipol University in Istanbul. My department is <mark>Management Information Systems</mark>. On this website, you will find my resume, projects, and favorite books.
+                    </p>
+                    <a href="http://www.medipol.edu.tr" target="_blank" class="university-link">Visit Medipol University</a>
+                </div>
+            </div>
+
+            <hr />
+        </div>
+
+        <footer>
+            <p>Copyright ©: <a href="mailto:yaser.barbour@medipol.edu.tr" target="_blank">Yaser Barbour</a></p>
+        </footer>
+    </article>
+</body>
+</html>
